@@ -21,12 +21,14 @@ Each game keeps its HTML, JavaScript, and styles in its own directory. The Mines
 
 ### Tic-Tac-Toe
 
-![Tic-Tac-Toe board](https://pbs.twimg.com/media/EfgYdjvXYAE0KJJ?format=jpg&name=large)
+![Tic-Tac-Toe board](docs/screenshots/tic-tac-toe.png)
 
 ### Minesweeper
 
-![Minesweeper board](https://pbs.twimg.com/media/EhXfaOTXsAATdcg?format=png&name=small)
+![Minesweeper board](docs/screenshots/minesweeper.png)
+
+These screenshots were captured from the included games and are stored in this repository, so the README does not depend on external image hosts.
 
 ## Validation
 
-There is no automated test suite. When changing a game, check normal moves, win/loss conditions, and any reset controls in the browser. Inspect the console for errors and confirm that styles and scripts load. The screenshots above are the original externally hosted images; their availability has not been verified.
+There is no automated test suite. When changing a game, check normal moves, win/loss conditions, and any reset controls in the browser. Inspect the console for errors and confirm that styles and scripts load.

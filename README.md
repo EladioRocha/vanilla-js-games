@@ -1,40 +1,32 @@
-# Javascript-Vanilla-Games
+# Vanilla JavaScript Games
 
-Colección de juegos escritos con HTML, CSS y JavaScript sin framework: buscaminas y tres en raya.
+Two browser games built with **plain JavaScript, HTML, and CSS**: Minesweeper and Tic-Tac-Toe. There is no framework, dependency installation, or build pipeline.
 
-## Estructura
+## Play locally
 
-- [buscaminas](buscaminas)
-- [tic-tac-toe](tic-tac-toe)
-
-## Preparación y uso
-
-Sirve la raíz con un servidor estático; por ejemplo, si tienes Python 3:
+From the repository root, start a static server. For example, with Python 3:
 
 ```sh
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Abre `http://127.0.0.1:8000/` y navega al ejemplo:
+| Game | Local URL | Source |
+| --- | --- | --- |
+| Minesweeper | `http://127.0.0.1:8000/buscaminas/` | [buscaminas/](buscaminas/) |
+| Tic-Tac-Toe | `http://127.0.0.1:8000/tic-tac-toe/` | [tic-tac-toe/](tic-tac-toe/) |
 
-- [buscaminas/index.html](buscaminas/index.html)
-- [tic-tac-toe/index.html](tic-tac-toe/index.html)
+Each game keeps its HTML, JavaScript, and styles in its own directory. The Minesweeper directory retains its original Spanish name, `buscaminas`.
 
-Los recursos cargados desde servicios externos requieren conexión. La comprobación local debe incluir la consola del navegador y la carga de imágenes, scripts y estilos.
+## Screenshots
 
-## Validación y estado
+### Tic-Tac-Toe
 
-Esta guía se contrastó con el árbol de archivos y los manifiestos del repositorio. No se ha validado una ejecución completa contra servicios externos, bases de datos o hardware. Las versiones y los scripts mostrados describen el código actual; no implican que sus dependencias antiguas sigan siendo compatibles.
+![Tic-Tac-Toe board](https://pbs.twimg.com/media/EfgYdjvXYAE0KJJ?format=jpg&name=large)
 
-## Documentación previa
+### Minesweeper
 
-Se conserva como referencia histórica, incluidas las imágenes y atribuciones originales. Los enlaces a demos y servicios no se han comprobado.
+![Minesweeper board](https://pbs.twimg.com/media/EhXfaOTXsAATdcg?format=png&name=small)
 
-# Juegos creado con javascript vanilla
-En este repositorio estaré subiendo todo los juegos creados con javascript vanilla
+## Validation
 
-## Tic Tac Toe
-![Imágen del tic tac toe](https://pbs.twimg.com/media/EfgYdjvXYAE0KJJ?format=jpg&name=large)
-
-## Buscaminas
-![Imágen del juego del buscaminas](https://pbs.twimg.com/media/EhXfaOTXsAATdcg?format=png&name=small)
+There is no automated test suite. When changing a game, check normal moves, win/loss conditions, and any reset controls in the browser. Inspect the console for errors and confirm that styles and scripts load. The screenshots above are the original externally hosted images; their availability has not been verified.
